@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <header id="titulo"> 
+        <h1 class="h1">
+            <a href="#avaliar">AVALIAFLIX</a>
+        </h1>
+        <h2 class="h2">
+        <a href="#home">
+            <img class="subir" src="download.svg" alt="Icone de subir">
+
+
+        </a></h2>
+    </header>
+
+    <div id="home">
+    <h1><span class="highlight">AVALIAFLIX</span></h1>
+    <h3>Um universo de avaliações sobre os filmes da Netflix.</h3><br>
+        <p>
+        Este espaço foi criado com o objetivo de reunir opiniões  relevantes sobre os melhores filmes disponíveis na Netflix. <br><br>
+        Qualquer pessoa pode avaliar, comentar e compartilhar suas impressões sobre os títulos mais assistidos e recomendados da plataforma. <br><br>
+        Nosso foco é oferecer uma comunidade colaborativa onde espectadores ocasionais possam trocar experiências, <br>descobrir novos filmes e ajudar outros usuários a escolherem o que assistir.
+        </p><br>
+        <p><strong>Participe, avalie e descubra os filmes mais bem cotados pela própria audiência!</strong></p><br><br>
+        <a href="#destaques"><strong>Confira os destaques de hoje</strong></a>
+    </div>
+
+
+    <div id="avaliar">
+        <form action="#" method="get" target="_blank">
+                <fieldset>
+                <p id="ttp">Avalie o filme assistido</p><br>
+                <input type ="text" id="nome" placeholder="Seu nome"><br>
+                <input type="email" id="email" placeholder="Seu E-mail"><br>
+                <input type="text" id="filme" placeholder="Filme assistido"><br>
+                <input type="textarea" id="avaliacao2" placeholder="Fale sobre o filme"><br>
+                <input type="number" id="avaliacao" placeholder="Nota pro filme (0 a 10)" min="0" max="10">
+             
+                <p>
+                    <button type="reset">Resetar</button>
+                    <button type="submit">Enviar</button>
+                </p>
+
+            </fieldset>
+        </form>
+    </div>
+
+    <div id="destaques">
+    <h2>Filmes em Destaque</h2><br>
+    <div class="filmes-container">
+
+        <div class="filme-card" onclick="toggleDescricao(this)">
+        <img src="https://br.web.img3.acsta.net/img/92/1f/921fe2b9fff2b6bf5dc351021d84556a.jpg" alt="Filme 1">
+        <p>Farol da ilusão</p>
+        <div class="descricao">"Farol da Ilusão" é um filme libanês disponível na Netflix, que retrata a história de uma família presa em uma ilha deserta, lutando pela sobrevivência enquanto o passado volta para assombrá-los com momentos dolorosos. O filme, descrito como um drama psicológico com toques de suspense e fantasia, explora temas como isolamento, proximidade emocional e dor. </div>
+        </div>
+
+        <div class="filme-card" onclick="toggleDescricao(this)">
+        <img src="https://i.ytimg.com/vi/JTBcDiCZbZM/maxresdefault.jpg" alt="Filme 2">
+        <p>O Mundo depois de nós</p>
+        <div class="descricao">É um filme de suspense psicológico que acompanha duas famílias, uma branca de classe média e outra negra rica, que se encontram em uma casa de férias quando um apagão global causado por um ataque cibernético ameaça a ordem mundial.</div>
+        </div>
+
+        <div class="filme-card" onclick="toggleDescricao(this)">
+        <img src="https://cloud.estacaonerd.com/wp-content/uploads/2022/07/22192001/Agente-Oculto-Netflix-Irmaos-Russo-Posteres.jpg" alt="Filme 3">
+        <p>Agente oculto</p>
+        <div class="descricao">"Agente Oculto" é um filme de ação e espionagem da Netflix, dirigido pelos irmãos Russo, conhecido por seus trabalhos em Vingadores: Guerra Infinita e Ultimato. O filme acompanha Gentry (interpretado por Ryan Gosling), um agente secreto da CIA com identidade desconhecida, que se vê em fuga após descobrir informações comprometedoras sobre a agência.</div>
+        </div>
+
+        <div class="filme-card" onclick="toggleDescricao(this)">
+        <img src="https://img.odcdn.com.br/wp-content/uploads/2025/01/De-volta-a-ao-2025-1920x1080.jpg" alt="Filme 4">
+        <p>De volta a ação</p>
+        <div class="descricao">"De Volta à Ação" é um filme de comédia e ação da Netflix, onde dois ex-agentes da CIA, Matt e Emily, são forçados a retornar ao mundo da espionagem após 15 anos vivendo uma vida normal com seus filhos.</div>
+        </div>
+        </div>
+
+    <div id="infos"><p>Os filmes mais bem avaliados estão aqui! As avaliações são atualizadas diariamente com base nas opiniões dos usuários.<br><br> Para saber mais sobre os filmes, basta clicar sobre a imagem que abrirá a descrição.</p></div>
+    </div>
+
+
+    <footer id="barra">
+        <span>CopyRight @ 2025</span>
+        <span>Developed by João H. Calza</span>
+        <a href="https://br.linkedin.com/in/joaohcalza?trk=people-guest_people_search-card" target="_blank">
+            <img class="linkedin" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="Ícone do LinkedIn">
+        </a>
+    </footer>
+    
+    <script>
+    function toggleDescricao(card) {
+        card.classList.toggle('ativo');
+    }
+    </script>
+
+</body>
+</html>
